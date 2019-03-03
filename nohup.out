@@ -1,0 +1,209 @@
+[15:44:59] Using gulpfile ~/www/kwity/wp-content/themes/kwity/gulpfile.js
+[15:44:59] Starting 'watch'...
+[15:44:59] Finished 'watch' after 15 ms
+[15:45:38] Starting 'styles'...
+[15:45:38] Starting 'sass'...
+[15:45:40] Finished 'sass' after 1.59 s
+[15:45:40] Starting 'minifycss'...
+[15:45:41] Finished 'minifycss' after 1.36 s
+[15:45:41] Finished 'styles' after 2.95 s
+[15:52:55] Starting 'styles'...
+[15:52:55] Starting 'sass'...
+{ Error: src/sass/understrap/understrap/understrap.scss
+Error: ".screen-reader-text" failed to @extend ".sr-only".
+       The selector ".sr-only" was not found.
+       Use "@extend .sr-only !optional" if the extend should be able to fail.
+        on line 27 of src/sass/understrap/understrap/understrap.scss
+>> .screen-reader-text { @extend .sr-only; }
+
+   ------------------------------^
+
+    at options.error (/home/nemanja/www/kwity/wp-content/themes/kwity/node_modules/node-sass/lib/index.js:291:26)
+  status: 1,
+  file: '/home/nemanja/www/kwity/wp-content/themes/kwity/src/sass/understrap/understrap/understrap.scss',
+  line: 27,
+  column: 31,
+  message: 'src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  formatted: 'Error: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  messageFormatted: 'src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  messageOriginal: '".screen-reader-text" failed to @extend ".sr-only".\nThe selector ".sr-only" was not found.\nUse "@extend .sr-only !optional" if the extend should be able to fail.',
+  relativePath: 'src/sass/understrap/understrap/understrap.scss',
+  name: 'Error',
+  stack: 'Error: src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n\n    at options.error (/home/nemanja/www/kwity/wp-content/themes/kwity/node_modules/node-sass/lib/index.js:291:26)',
+  __safety: undefined,
+  _stack: undefined,
+  plugin: 'gulp-sass',
+  showProperties: true,
+  showStack: false }
+[15:52:56] Finished 'sass' after 815 ms
+[15:52:56] Starting 'minifycss'...
+[15:52:57] Finished 'minifycss' after 1.02 s
+[15:52:57] Finished 'styles' after 1.83 s
+[15:53:06] Starting 'styles'...
+[15:53:06] Starting 'sass'...
+{ Error: src/sass/understrap/understrap/understrap.scss
+Error: ".screen-reader-text" failed to @extend ".sr-only".
+       The selector ".sr-only" was not found.
+       Use "@extend .sr-only !optional" if the extend should be able to fail.
+        on line 27 of src/sass/understrap/understrap/understrap.scss
+>> .screen-reader-text { @extend .sr-only; }
+
+   ------------------------------^
+
+    at options.error (/home/nemanja/www/kwity/wp-content/themes/kwity/node_modules/node-sass/lib/index.js:291:26)
+  status: 1,
+  file: '/home/nemanja/www/kwity/wp-content/themes/kwity/src/sass/understrap/understrap/understrap.scss',
+  line: 27,
+  column: 31,
+  message: 'src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  formatted: 'Error: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  messageFormatted: 'src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  messageOriginal: '".screen-reader-text" failed to @extend ".sr-only".\nThe selector ".sr-only" was not found.\nUse "@extend .sr-only !optional" if the extend should be able to fail.',
+  relativePath: 'src/sass/understrap/understrap/understrap.scss',
+  name: 'Error',
+  stack: 'Error: src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n\n    at options.error (/home/nemanja/www/kwity/wp-content/themes/kwity/node_modules/node-sass/lib/index.js:291:26)',
+  __safety: undefined,
+  _stack: undefined,
+  plugin: 'gulp-sass',
+  showProperties: true,
+  showStack: false }
+[15:53:06] Finished 'sass' after 801 ms
+[15:53:06] Starting 'minifycss'...
+[15:53:07] Finished 'minifycss' after 545 ms
+[15:53:07] Finished 'styles' after 1.35 s
+[15:53:13] Starting 'styles'...
+[15:53:13] Starting 'sass'...
+{ Error: src/sass/understrap/understrap/understrap.scss
+Error: ".screen-reader-text" failed to @extend ".sr-only".
+       The selector ".sr-only" was not found.
+       Use "@extend .sr-only !optional" if the extend should be able to fail.
+        on line 27 of src/sass/understrap/understrap/understrap.scss
+>> .screen-reader-text { @extend .sr-only; }
+
+   ------------------------------^
+
+    at options.error (/home/nemanja/www/kwity/wp-content/themes/kwity/node_modules/node-sass/lib/index.js:291:26)
+  status: 1,
+  file: '/home/nemanja/www/kwity/wp-content/themes/kwity/src/sass/understrap/understrap/understrap.scss',
+  line: 27,
+  column: 31,
+  message: 'src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  formatted: 'Error: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  messageFormatted: 'src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  messageOriginal: '".screen-reader-text" failed to @extend ".sr-only".\nThe selector ".sr-only" was not found.\nUse "@extend .sr-only !optional" if the extend should be able to fail.',
+  relativePath: 'src/sass/understrap/understrap/understrap.scss',
+  name: 'Error',
+  stack: 'Error: src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n\n    at options.error (/home/nemanja/www/kwity/wp-content/themes/kwity/node_modules/node-sass/lib/index.js:291:26)',
+  __safety: undefined,
+  _stack: undefined,
+  plugin: 'gulp-sass',
+  showProperties: true,
+  showStack: false }
+[15:53:14] Finished 'sass' after 826 ms
+[15:53:14] Starting 'minifycss'...
+[15:53:14] Finished 'minifycss' after 364 ms
+[15:53:14] Finished 'styles' after 1.19 s
+[15:53:28] Starting 'styles'...
+[15:53:28] Starting 'sass'...
+{ Error: src/sass/understrap/understrap/understrap.scss
+Error: ".screen-reader-text" failed to @extend ".sr-only".
+       The selector ".sr-only" was not found.
+       Use "@extend .sr-only !optional" if the extend should be able to fail.
+        on line 27 of src/sass/understrap/understrap/understrap.scss
+>> .screen-reader-text { @extend .sr-only; }
+
+   ------------------------------^
+
+    at options.error (/home/nemanja/www/kwity/wp-content/themes/kwity/node_modules/node-sass/lib/index.js:291:26)
+  status: 1,
+  file: '/home/nemanja/www/kwity/wp-content/themes/kwity/src/sass/understrap/understrap/understrap.scss',
+  line: 27,
+  column: 31,
+  message: 'src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  formatted: 'Error: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  messageFormatted: 'src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n',
+  messageOriginal: '".screen-reader-text" failed to @extend ".sr-only".\nThe selector ".sr-only" was not found.\nUse "@extend .sr-only !optional" if the extend should be able to fail.',
+  relativePath: 'src/sass/understrap/understrap/understrap.scss',
+  name: 'Error',
+  stack: 'Error: src/sass/understrap/understrap/understrap.scss\nError: ".screen-reader-text" failed to @extend ".sr-only".\n       The selector ".sr-only" was not found.\n       Use "@extend .sr-only !optional" if the extend should be able to fail.\n        on line 27 of src/sass/understrap/understrap/understrap.scss\n>> .screen-reader-text { @extend .sr-only; }\n\n   ------------------------------^\n\n    at options.error (/home/nemanja/www/kwity/wp-content/themes/kwity/node_modules/node-sass/lib/index.js:291:26)',
+  __safety: undefined,
+  _stack: undefined,
+  plugin: 'gulp-sass',
+  showProperties: true,
+  showStack: false }
+[15:53:28] Finished 'sass' after 745 ms
+[15:53:28] Starting 'minifycss'...
+[15:53:29] Finished 'minifycss' after 903 ms
+[15:53:29] Finished 'styles' after 1.65 s
+[15:54:00] Starting 'styles'...
+[15:54:00] Starting 'sass'...
+[15:54:02] Finished 'sass' after 1.66 s
+[15:54:02] Starting 'minifycss'...
+[15:54:03] Finished 'minifycss' after 977 ms
+[15:54:03] Finished 'styles' after 2.64 s
+[15:58:33] Starting 'styles'...
+[15:58:33] Starting 'sass'...
+[15:58:35] Finished 'sass' after 1.54 s
+[15:58:35] Starting 'minifycss'...
+[15:58:35] Finished 'minifycss' after 408 ms
+[15:58:35] Finished 'styles' after 1.95 s
+[15:58:59] Starting 'styles'...
+[15:58:59] Starting 'sass'...
+[15:59:01] Finished 'sass' after 1.63 s
+[15:59:01] Starting 'minifycss'...
+[15:59:01] Finished 'minifycss' after 791 ms
+[15:59:01] Finished 'styles' after 2.42 s
+[15:59:08] Starting 'styles'...
+[15:59:08] Starting 'sass'...
+[15:59:09] Finished 'sass' after 1.29 s
+[15:59:09] Starting 'minifycss'...
+[15:59:10] Finished 'minifycss' after 893 ms
+[15:59:10] Finished 'styles' after 2.18 s
+[15:59:45] Starting 'styles'...
+[15:59:45] Starting 'sass'...
+[15:59:46] Finished 'sass' after 955 ms
+[15:59:46] Starting 'minifycss'...
+[15:59:47] Finished 'minifycss' after 431 ms
+[15:59:47] Finished 'styles' after 1.39 s
+[16:00:06] Starting 'styles'...
+[16:00:06] Starting 'sass'...
+[16:00:07] Finished 'sass' after 1.18 s
+[16:00:07] Starting 'minifycss'...
+[16:00:08] Finished 'minifycss' after 342 ms
+[16:00:08] Finished 'styles' after 1.52 s
+[16:01:41] Starting 'styles'...
+[16:01:41] Starting 'sass'...
+[16:01:43] Finished 'sass' after 1.48 s
+[16:01:43] Starting 'minifycss'...
+[16:01:43] Finished 'minifycss' after 404 ms
+[16:01:43] Finished 'styles' after 1.89 s
+[16:07:59] Starting 'styles'...
+[16:07:59] Starting 'sass'...
+[16:08:00] Finished 'sass' after 1.27 s
+[16:08:00] Starting 'minifycss'...
+[16:08:01] Finished 'minifycss' after 747 ms
+[16:08:01] Finished 'styles' after 2.02 s
+[16:08:29] Starting 'styles'...
+[16:08:29] Starting 'sass'...
+[16:08:30] Finished 'sass' after 1.58 s
+[16:08:30] Starting 'minifycss'...
+[16:08:31] Finished 'minifycss' after 884 ms
+[16:08:31] Finished 'styles' after 2.46 s
+[16:11:49] Starting 'styles'...
+[16:11:49] Starting 'sass'...
+[16:11:50] Finished 'sass' after 1.35 s
+[16:11:50] Starting 'minifycss'...
+[16:11:51] Finished 'minifycss' after 694 ms
+[16:11:51] Finished 'styles' after 2.05 s
+[16:14:38] Starting 'styles'...
+[16:14:38] Starting 'sass'...
+[16:14:39] Finished 'sass' after 1.49 s
+[16:14:39] Starting 'minifycss'...
+[16:14:40] Finished 'minifycss' after 801 ms
+[16:14:40] Finished 'styles' after 2.3 s
+[16:15:54] Starting 'styles'...
+[16:15:54] Starting 'sass'...
+[16:15:55] Finished 'sass' after 1.53 s
+[16:15:55] Starting 'minifycss'...
+[16:15:56] Finished 'minifycss' after 676 ms
+[16:15:56] Finished 'styles' after 2.21 s

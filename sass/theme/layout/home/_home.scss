@@ -1,0 +1,28 @@
+
+
+
+#istrazivanja {
+  span {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .col-6 {
+    text-align: center;
+    img {
+      margin-bottom: 1.375rem;
+      max-height: 30%;
+    }
+  }
+}
+
+
+#what-we-do {
+  p:first-child {
+    margin-bottom: 3rem;
+  }
+
+  .col-md-6 {
+    margin-bottom: 2rem;
+  }
+}
