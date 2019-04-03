@@ -1,0 +1,132 @@
+#smartmedia {
+  background-image: url("http://192.168.1.184/wp-content/uploads/2019/03/2.png");
+  @include media-breakpoint-up(md) {
+    background-image: url("http://192.168.1.184/wp-content/uploads/2019/03/3.png");
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url("http://192.168.1.184/wp-content/uploads/2019/03/1.png");
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    @include media-breakpoint-up(lg) {
+      background: #11101057;
+      color: #fff;
+      font-size: 3.7rem;
+      padding: 2rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    @include media-breakpoint-up(lg) {
+      background: #11101057;
+      color: #fff;
+      font-size: 3rem;
+      padding: 1.5rem;
+      width: 80%;
+    }
+  };
+}
+
+.sekcija-klijenti {
+  .row:nth-child(2) {
+    .img-wrapper a {
+      display: flex;
+      align-items: center;
+      user-select: center;
+      transition: ease-out 0.5s;
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      opacity: 0.6;
+
+      &:hover {
+        transform: scale(1.2);
+        -webkit-filter: grayscale(0);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(0);
+        opacity: 1;
+      }
+
+      img {
+        max-width: 50%;
+        margin: 3rem auto;
+      }
+    }
+  }
+  h2 {
+    text-align: center;
+    margin: 0 auto 5rem;
+  }
+}
+
+#zastodigital {
+  .row:nth-child(3) {
+    text-align: center;
+    padding: 4em 0;
+
+    p {
+      font-weight: 500;
+      margin-bottom: 1rem;
+      @include media-breakpoint-up(lg) {
+        width: 60%;
+        margin: 0 auto 5rem;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0 auto 5rem;
+  }
+}
+
+#smart-opis {
+  position: relative;
+
+  .desk-only {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
+      // position: absolute;
+      // top: 88px;
+      // right: -181px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin: 2rem auto 5rem;
+  }
+}
+
+#usluge {
+  h2 {
+    text-align: center;
+    margin: 0 auto 5rem auto;
+  }
+}
+
+.smart-contact-wrapper {
+  h5 {
+    margin-bottom: 1.5rem;
+  }
+  svg {
+    width: 60px;
+  }
+  li {
+    list-style-type: none;
+    margin-right: 1rem;
+  }
+  li:nth-child(1) {
+    float: left;
+  }
+  span {
+    font-weight: 500;
+  }
+}

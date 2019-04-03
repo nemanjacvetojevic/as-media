@@ -1,0 +1,20 @@
+
+
+.navbar {
+    background: rgba(255,255,255,.85);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      height: 70px;
+    }
+}
+
+.nav-up {
+    top: -60px;
+    @include media-breakpoint-up(lg) {
+      top: -70px;
+    }
+}

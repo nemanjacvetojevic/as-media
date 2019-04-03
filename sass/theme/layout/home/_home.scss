@@ -1,25 +1,122 @@
+#naslovna-banner {
+  background-image: url("http://192.168.1.184/wp-content/uploads/2019/03/naslovna-banner-ph.png");
+  display: block;
+  position: relative;
+  @include media-breakpoint-up(md) {
+    background-image: url("http://192.168.1.184/wp-content/uploads/2019/03/naslovna-banner-tab.png");
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url("http://192.168.1.184/wp-content/uploads/2019/03/naslovna-banner-desk.png");
+  }
 
+  .video-wrapper {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
 
+    video {
+      position: absolute;
+      height: auto;
+      min-width: 100%;
+      min-height: 100vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+
+  .container {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    @include media-breakpoint-up(md) {
+      top: 25%;
+    }
+    @include media-breakpoint-up(lg) {
+      top: 28%;
+      left: 8%;
+    }
+  }
+
+  h1 {
+    margin-top: 3rem;
+    line-height: 1.1;
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
+
+  p {
+    min-height: 200px;
+    @include media-breakpoint-up(md) {
+      min-height: 230px;
+    }
+
+    span {
+      background-color: rgba(0, 0, 0, .5);
+    }
+  }
+}
 
 #istrazivanja {
   span {
     display: block;
     margin-bottom: 1rem;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .kruzici {
+    margin: 4rem 0;
   }
 
   .col-6 {
     text-align: center;
+
     img {
       margin-bottom: 1.375rem;
+      height: 30%;
       max-height: 30%;
+      width: auto;
+      // max-width: 40%; ovo samo u slucaju ludila
     }
+  }
+
+  .col-md-4 {
+    padding: 1.5rem 15px;
   }
 }
 
-
 #what-we-do {
+  h2 {
+    text-align: left;
+    margin: 1.5rem auto 3rem;
+    @include media-breakpoint-up(md) {
+      text-align: center;
+      margin: 2rem auto 4rem;
+    }
+  }
+
   p:first-child {
     margin-bottom: 3rem;
+    @include media-breakpoint-up(md) {
+      text-align: center;
+      width: 70%;
+      margin: 0 auto 4rem;
+      font-weight: 300;
+    }
+  }
+
+  .row:nth-child(2) {
+    img {
+      max-width: 25%;
+    }
   }
 
   .col-md-6 {

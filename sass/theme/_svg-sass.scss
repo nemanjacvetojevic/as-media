@@ -1,0 +1,67 @@
+svg {
+  fill:#bdc0c1;
+  margin-bottom: 1.2rem;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.icon-wrapper {
+  svg {
+    height: 60px;
+    @include media-breakpoint-up(md) {
+      height: 75px;
+    }
+  }
+}
+
+[data-aos="svg-fill-s1"] {
+  svg {
+    fill: #bdc0c1;
+  }
+  // ovde ide neki kod sa bojom
+
+
+
+  &.aos-animate {
+    svg {
+      // ovo je boja standardna
+      fill: $s1-color;
+    }
+
+  }
+}
+
+[data-aos="svg-fill-s2"] {
+  // ovde ide neki kod sa bojom
+  opacity: 0;
+ transition-property: transform, opacity;
+
+  &.aos-animate {
+    // ovo je boja standardna
+    opacity: 1;
+    fill: $s2-color;
+  }
+}
+
+[data-aos="svg-fill-s3"] {
+  // ovde ide neki kod sa bojom
+  fill: #bdc0c1;
+  transition: ease-in-out 3s;
+
+  &.aos-animate {
+    // ovo je boja standardna
+    fill: $s3-color;
+  }
+}
+
+[data-aos="svg-fill-s4"] {
+  // ovde ide neki kod sa bojom
+  fill: #bdc0c1;
+  transition: ease-in-out 3s;
+
+  &.aos-animate {
+    // ovo je boja standardna
+    fill: $s4-color;
+  }
+}

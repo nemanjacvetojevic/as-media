@@ -21,15 +21,26 @@ function theme_enqueue_styles() {
 	// Get the theme data
 	$the_theme = wp_get_theme();
     wp_enqueue_style( 'simplebar-css', get_stylesheet_directory_uri() . '/css/simplebar.css',array(), 1.000 );
+    wp_enqueue_style( 'vicons', get_stylesheet_directory_uri() . '/css/vicons-font.css',array(), 1.000 );
+    wp_register_style( 'AOS-CSS', 'https://unpkg.com/aos@next/dist/aos.css' );
+    wp_enqueue_style('AOS-CSS');
     wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get( 'Version' ) );
 
     wp_enqueue_script( 'jquery');
     wp_enqueue_script( 'cookie', get_stylesheet_directory_uri() . '/js/js.cookie.min.js', array('jquery') );
     wp_enqueue_script( 'menu', get_stylesheet_directory_uri() . '/js/menu.js', array(), 1.0, true );
     wp_enqueue_script( 'typer', get_stylesheet_directory_uri() . '/js/typer.js', array(), 1.0, true );
-    wp_enqueue_script( 'video', get_stylesheet_directory_uri() . '/js/video.js', array(), 1.0, true );
+    // wp_enqueue_script( 'video', get_stylesheet_directory_uri() . '/js/video.js', array(), 1.0, true );
     wp_enqueue_script( 'color', get_stylesheet_directory_uri() . '/js/color.js', array(), 1.0, true );
-
+    wp_enqueue_script( 'counter', get_stylesheet_directory_uri() . '/js/counter.js', array(), 1.0, true );
+    wp_enqueue_script( 'progres', get_stylesheet_directory_uri() . '/js/progressbar.min.js', array(), 1.0, true );
+    wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/js/slick.min.js', array(), 1.0, true );
+    wp_enqueue_script( 'play', get_stylesheet_directory_uri() . '/js/play.js', array(), 1.0, true );
+    wp_enqueue_script( 'navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array(), 1.0, true );
+    wp_register_script( 'AOS-js', 'https://unpkg.com/aos@next/dist/aos.js', null, null, true );
+    wp_enqueue_script('AOS-js');
+    wp_enqueue_script( 'custom', get_stylesheet_directory_uri() . '/js/custom.js', array(), 1.0, true );
+    // wp_enqueue_script( 'svgchange', get_stylesheet_directory_uri() . '/js/jq-svgchange.js', array(), 1.0, true );
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
@@ -88,3 +99,36 @@ function myprefix_image_downsize( $value = false, $id, $size ) {
  * params are 3.
  */
 add_filter( 'image_downsize', 'myprefix_image_downsize', 1, 3 );
+
+
+function post_slide( $atts ) {
+  $html = "<div class='slide-item'>";
+  $html .= "<div class='slide-image'>{{image}}</div>";
+  $html .= "<div class='slide-name'>{{name}}</div>";
+  $html .= "<div class='slide-content'>{{content}}</div>";
+  $html .= "</div>";
+
+  if(!isset($atts['id'])) {
+    return '';
+  }
+
+  $post = get_post($atts['id']);
+  if(!$post) {
+    return '';
+  }
+
+  $content = $post->post_content;
+  $content = apply_filters('the_content', $content);
+  $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),the_post_thumbnail( 'full' ) );
+  if($image) {
+    $image = "<img src='" . $image[0] . "' />";
+  }
+  $name = $post->post_title;
+
+  $html = str_replace('{{image}}', $image ?: '', $html);
+  $html = str_replace('{{name}}', $name, $html);
+  $html = str_replace('{{content}}', $content, $html);
+
+  return $html;
+}
+add_shortcode( 'post-slide', 'post_slide' );

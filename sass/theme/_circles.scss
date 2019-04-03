@@ -1,0 +1,11 @@
+.circle {
+  position: relative;
+  width: 120px;
+  margin: 0 auto;
+  @include media-breakpoint-up(md) {
+    width: 140px;
+  }
+  @include media-breakpoint-up(lg){
+    width: 175px;
+  }
+}

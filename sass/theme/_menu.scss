@@ -1,8 +1,8 @@
 $background--color:#1e2023;
 $icon--color:#1e2023;
-$font--color:#ffffff;
+
 $font--color--active:#000000;
-$font--primary:'Fira Sans', sans-serif;
+
 $transition--length: .8;
 
 
@@ -11,18 +11,32 @@ $transition--length: .8;
 	$size: 30px;
 	height: $size;
 	width: $size;
-	position: fixed;
+	position: relative;
 	z-index:2;
-	right: 50px;
-	top: 30px;
+	// right: 23px;
+	// top: 7px;
+	margin-right: 1rem;
 	cursor: pointer;
+	@include media-breakpoint-up(md) {
+		margin-right: 2.5rem;
+		$size:35px;
+		height: $size;
+		width: $size;
+		margin-top: 1rem;
+	}
+	@include media-breakpoint-up(lg) {
+		margin-right: 10%;
+	}
 	&__line{
 		height: 2px;
 		width: $size;
 		display: block;
-		background-color: $font--color;
+		background-color: #000;
 		margin-bottom: 4px;
 		transition: transform .2s ease, background-color .5s ease;
+		@include media-breakpoint-up(md) {
+			height: 3px;
+		}
 	}
 	&__line-left{
 		width: $size ;
@@ -62,24 +76,26 @@ $transition--length: .8;
 	&__content{
 		position: fixed;
 		top:50%;
-		transform: translate(0%,-50%);
+		transform: translate(100%,-50%);
 		width: 100%;
-    	text-align: center;
+    text-align: center;
 		font-size: $font--size--calc;
 		font-weight: 200;
+		z-index: -1;
 	}
 	&__list-item{
 		cursor: pointer;
-		display: inline-block;
+		display: block; // na vecim rez promeniti u inline-block
 		z-index: -1;
 		position: relative;
-		display: inline-block;
+		// display: inline-block;
 		transition-delay: $transition--length + s;
 		opacity: 0;
 		transform: translate(0%, 100%);
 		transition: opacity .2s ease, transform .3s ease;
 		margin-right: 25px;
 		&:before{
+			display:none;//na vecim rezolucijam promeniti u block ili inline
 			content: "";
 			position: absolute;
 			background: $font--color--active;
@@ -98,6 +114,11 @@ $transition--length: .8;
 
 		.nav-link {
 			padding-left: 0;
+			font-size: 1.3rem;
+			color: #8D8A8A;
+			@include media-breakpoint-up(md) {
+				font-size: 2rem;
+			}
 		}
 
 	}
@@ -105,7 +126,7 @@ $transition--length: .8;
 
 //active state
 body.nav-active{
-	$menu--items--count: 4;
+	$menu--items--count: 10;
 	.menu-icon{
 		&__line{
 			background-color: #000;
@@ -123,6 +144,10 @@ body.nav-active{
 		visibility:visible;
 		&:before,&:after{
 			transform: translateX(0%) translateY(0%);
+		}
+		&__content {
+			z-index: 1;
+			transform: translate(0,-50%);
 		}
 		&:after{
 			transition-delay: .1s;

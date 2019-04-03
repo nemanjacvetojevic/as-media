@@ -57,6 +57,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<span>Finansije: +381 11 40 40 485</span>
 								</div>
 							</div>
+							<div class="row">
+								<div class="col-12">
+									<h3>Društvene mreže</h3>
+									<div class="drustvene-ikonice-wrapper">
+										<a href="https://www.facebook.com/asmedia.rs/" target="_blank" rel="noreferrer"><img src="https://192.168.1.184/wp-content/uploads/2019/02/facebook.svg" alt=""></a>
+										<a href="https://www.instagram.com/as_media/" target="_blank" rel="noreferrer"><img src="https://192.168.1.184/wp-content/uploads/2019/02/instagram.svg" alt=""></a>
+										<a href="https://twitter.com/asmedia_serbia" target="_blank" rel="noreferrer"><img src="https://192.168.1.184/wp-content/uploads/2019/02/twitter.svg" alt=""></a>
+									</div>
+								</div>
+							</div>
+
 						</div>
 						<div id="mapa-sajta" class="phone-display-none col-md-6 col-lg-2">
 							<h3>Mapa sajta</h3>
@@ -76,22 +87,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div id="contact-form" class="phone-display-none col-md-12 col-lg-5">
 							<!-- ovde ide shortcode za wp-formu -->
 						</div>
-						<div class="col-12 col-md-12 col-lg-2">
-							<h4>DRUŠTVENE MREŽE</h4>
-							<a href="#"><img src="https://192.168.1.184/wp-content/uploads/2019/02/facebook.svg" alt=""></a>
-							<a href="#"><img src="https://192.168.1.184/wp-content/uploads/2019/02/instagram.svg" alt=""></a>
-							<a href="#"><img src="https://192.168.1.184/wp-content/uploads/2019/02/twitter.svg" alt=""></a>
-						</div>
+						<!-- <div class="col-12 col-md-12 col-lg-2">
+
+						</div> -->
 					</div>
 					<div class="row">
 						<div class="col-6 col-md-3">
 							<li>
-								<a href="#">Odluka o oglašavanju</a>
+								<a href="http://192.168.1.184/wp-content/uploads/2019/03/AS-MEDIA-Odluka-o-opstim-uslovima-oglasavanja.pdf" download target="_blank" rel="noreferrer">Odluka o oglašavanju</a>
 							</li>
 						</div>
 						<div class="col-6 col-md-3">
 							<li>
-								<a href="#">Podaci o firmi</a>
+								<a href="http://192.168.1.184/wp-content/uploads/2019/03/AS-informacije-o-firmi.docx" download target="_blank">Podaci o firmi</a>
 							</li>
 						</div>
 						<div class="col-12 col-md-6">

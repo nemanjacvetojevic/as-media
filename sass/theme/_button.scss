@@ -1,0 +1,281 @@
+button:focus {
+  outline: none
+}
+/* Naira */
+
+.button {
+  // float: left;
+  // min-width: 150px;
+  // max-width: 250px;
+  display: block;
+  margin: 2em auto;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button--naira {
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  border:2px solid #ff0c00;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: #ff0c00;
+    top: -50%;
+    z-index: -1;
+    -webkit-transform: translate3d(0, -100%, 0) rotate3d(0, 0, 1, -10deg);
+    transform: translate3d(0, -100%, 0) rotate3d(0, 0, 1, -10deg);
+  }
+  &.button--inverted::before {
+    background: #7986cb;
+  }
+}
+
+.button--naira-up::before {
+  -webkit-transform: translate3d(0, 100%, 0) rotate3d(0, 0, 1, 10deg);
+  transform: translate3d(0, 100%, 0) rotate3d(0, 0, 1, 10deg);
+}
+
+.button--naira {
+  > span {
+    display: block;
+  }
+  .button__icon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    color: #fff;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.button--naira-up .button__icon {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.button--naira {
+  > span, .button__icon {
+    padding: 1em 2em;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  }
+  &:hover::before {
+    -webkit-animation: anim-naira-1 0.3s forwards ease-in;
+    animation: anim-naira-1 0.3s forwards ease-in;
+  }
+}
+
+.button--naira-up:hover::before {
+  -webkit-animation: anim-naira-2 0.3s forwards ease-in;
+  animation: anim-naira-2 0.3s forwards ease-in;
+}
+
+@-webkit-keyframes anim-naira-1 {
+  50% {
+    -webkit-transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, -10deg);
+    transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, -10deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
+    transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+
+@keyframes anim-naira-1 {
+  50% {
+    -webkit-transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, -10deg);
+    transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, -10deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
+    transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+
+@-webkit-keyframes anim-naira-2 {
+  50% {
+    -webkit-transform: translate3d(0, 50%, 0) rotate3d(0, 0, 1, 10deg);
+    transform: translate3d(0, 50%, 0) rotate3d(0, 0, 1, 10deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
+    transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+
+@keyframes anim-naira-2 {
+  50% {
+    -webkit-transform: translate3d(0, 50%, 0) rotate3d(0, 0, 1, 10deg);
+    transform: translate3d(0, 50%, 0) rotate3d(0, 0, 1, 10deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
+    transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+
+.button--naira {
+  &:hover {
+    background-color: #ff0c00;
+    -webkit-transition: background-color 0s 0.3s;
+    transition: background-color 0s 0.3s;
+  }
+  &.button--inverted:hover {
+    background-color: #7986cb;
+  }
+  &:hover {
+    .button__icon {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    > span {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+}
+
+.button--naira-up:hover > span {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.as > .button--naira {
+  border:2px solid  $as-color;
+  &::before {
+    background-color: $as-color;
+  }
+  &:hover {
+    background-color: $as-color;
+  }
+  span {
+    color:$as-color;
+  }
+}
+
+.s1  .button--naira {
+  border:2px solid  $s1-color;
+  &::before {
+    background-color: $s1-color;
+    -webkit-transform: translate3d(0, -100%, 0) rotate3d(0, 0, 1, -10deg);
+    transform: translate3d(0, -100%, 0) rotate3d(0, 0, 1, -10deg);
+  }
+  &:hover {
+    background-color: $s1-color;
+  }
+  span {
+    color:$s1-color;
+  }
+}
+a.s1{
+  color:$s1-color;
+}
+a.s2 {
+  color: $s2-color;
+}
+a.s3 {
+  color: $s3-color;
+}
+a.s4 {
+  color: $s4-color;
+}
+
+.s2 > .button--naira {
+  border:2px solid  $s2-color;
+  &::before {
+    background: $s2-color;
+  }
+  &:hover {
+    background-color: $s2-color;
+  }
+  a {
+    span:$s2-color;
+  }
+}
+
+.s3 > .button--naira {
+  border:2px solid  $s3-color;
+  &::before {
+    background-color: $s3-color;
+  }
+  &:hover {
+    background-color: $s3-color;
+  }
+  span {
+    color:$s3-color;
+  }
+}
+
+.s4  .button--naira {
+  border:2px solid  $s4-color;
+  &::before {
+    background-color: $s4-color;
+  }
+  &:hover {
+    background-color: $s4-color;
+  }
+  span {
+    color:$s4-color;
+  }
+}
+
+// button play sass
+.button-2 {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  margin: 2.5rem 0;
+  border-color: transparent transparent transparent #939393;
+  transition: 200ms all ease;
+  cursor: pointer;
+
+  // play state
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+
+   &.pause {
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+  }
+
+  &:hover {
+    border-color: transparent transparent transparent #3e3e3e3e;
+  }
+}
